@@ -1,4 +1,6 @@
+"""Import turtle library"""
 from turtle import Turtle
+
 STARTING_POSITIONS = [(0, 0), (-20, 0), (-40, 0)]
 MOVE_DISTANCE = 20
 UP = 90
@@ -8,7 +10,7 @@ RIGHT = 0
 
 
 class Snake:
-
+"""THis class create the snake, add another turtle to extend the snake and set up the movmentof the snake"""
     def __init__(self):
         self.segments = []
         self.create_snake()
