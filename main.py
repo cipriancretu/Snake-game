@@ -1,9 +1,12 @@
+
+"""Import modules and classes"""
 from turtle import Screen
 from snake import Snake
 from food import Food
 from scoreboard import Scoreboard
 import time
 
+"""set up the screen"""
 screen = Screen()
 screen.setup(width=600, height=600)
 screen.bgcolor("black")
@@ -14,6 +17,7 @@ snake = Snake()
 food = Food()
 scoreboard = Scoreboard()
 
+"""set up the commands buttons"""
 screen.listen()
 screen.onkey(snake.up, "Up")
 screen.onkey(snake.down, "Down")
