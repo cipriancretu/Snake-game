@@ -1,9 +1,10 @@
+"""import turtle and random library"""
 from turtle import Turtle
 import random
 
 
 class Food(Turtle):
-
+    """This class create turtles,food, for snake and place it randomly on the screen"""
     def __init__(self):
         super().__init__()
         self.shape("circle")
